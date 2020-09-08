@@ -1,0 +1,120 @@
+@media (max-width: 991px) {
+	.logo {
+		display: block;
+	}
+	.burger {
+		display: block;
+		width: 40px;
+		height: 40px;
+		background-color: #fff;
+		cursor: pointer;
+		position: absolute;
+		right: 40px;
+		top: 20px;
+		z-index: 2;
+		border-radius: 10px;
+	}
+	.burger:before {
+		content: "";
+		height: 5px;
+		width: 30px;
+		background-color: #003255;
+		position: absolute;
+		top: 15%;
+		left: 50%;
+		transform: translateX(-50%);
+		border-radius: 10px;
+	}
+	.burger.active:before {
+		transform: translate(-50%, -0%) rotate(45deg) ;
+		top: 50%;
+	}
+	.burger:after {
+		content: "";
+		height: 5px;
+		width: 30px;
+		background-color: #003255;
+		position: absolute;
+		bottom: 15%;
+		left: 50%;
+		transform: translateX(-50%);
+		border-radius: 10px;
+	}
+	.burger.active:after {
+		transform: translate(-50%, -0%) rotate(-45deg) ;
+		top: 50%;
+	}
+	.burger span {
+		height: 5px;
+		width: 30px;
+		background-color: #003255;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		border-radius: 10px;
+	}
+	.burger.active span {
+		display: none;
+	}
+	.nav {
+		position: absolute;
+		top: -400px;
+	}
+	.nav.active {
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: rgba(0, 0, 0, 0.8);
+		height: 100%;
+		width: 100%;
+		padding: 100px 50px;
+		z-index: 1;
+	}
+	/*.nav.active ul {
+		display: block;
+	}*/
+	.nav ul {
+		display: block;
+	}
+	.nav ul li {
+		margin-bottom: 20px;
+	}
+	.nav ul li a {
+		font-size: 30px;
+	}
+	.nav ul li:nth-child(4) {
+		display: none;
+	}
+	.header_content {
+		padding-bottom: 25px;
+	}
+	.header_content-work {
+		max-width: 100%;
+		padding: 0 15px;
+	}
+	.header_content-form {
+		max-width: 100%;
+		margin-bottom: 80px;
+		margin-top: 125px;
+	}
+	.zamer_wrap {
+		margin-left: 13%;
+	}
+	.works_block .left,
+	.works_block .right {
+		width: 70%;
+	}
+	.santech_right ul {
+		padding-bottom: 20px;
+	}
+	.right_electro ul {
+		padding-bottom: 20px;
+	}
+	.works_block .right.paint_right {
+		padding-bottom: 95px;
+	}
+	.gips_right_wrap {
+		width: 100%;
+	}
+}
